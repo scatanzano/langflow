@@ -1,0 +1,9 @@
+[build]
+  command = "./start.sh"  # Use the start.sh script to launch Langflow
+  publish = "public"      # Specify the public directory to serve
+
+[build.environment]
+  LANGFLOW_PORT = "$PORT"                     # Use the port assigned by Netlify
+  LANGFLOW_SUPERUSER = "admin"                # Example username
+  LANGFLOW_SUPERUSER_PASSWORD = "password123" # Example password
+  LANGFLOW_AUTO_LOGIN = "true"                # Example value
